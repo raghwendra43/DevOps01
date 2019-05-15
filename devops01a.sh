@@ -3,3 +3,7 @@
 echo "`df -h`"
 #number cpus/cores, information about the cpus/core amount of ram
 echo "`system_profiler SPHardwareDataType`"
+# Print mac address
+echo "`networksetup -listallhardwareports`"
+# Print IP Address
+echo "`ipconfig getifaddr en0`"
