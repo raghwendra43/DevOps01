@@ -17,5 +17,15 @@ elif [ "$answer" = 'network' ] ;then
     echo " IP Address is :- "
     echo "`ipconfig getifaddr en0`"
 else
-    echo "No"
+    echo "Here is the Volume Information"
+    echo "`df -h`"
+    echo "Here is the CPU Information"
+    echo "`system_profiler SPHardwareDataType`"
+    echo "Here is the Ram Information"
+    echo "`system_profiler SPHardwareDataType`"
+    echo "Here is the Network Information"
+    echo " Mac Address is :- "
+    echo "`networksetup -listallhardwareports`"
+    echo " IP Address is :- "
+    echo "`ipconfig getifaddr en0`"
 fi
